@@ -1,2 +1,2 @@
 # HustleMode
-A mini effect app using audio CGPoint and 
+A mini effect app using audio CGPoint and panel
