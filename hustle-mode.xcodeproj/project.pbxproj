@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		858A57321FDD5D08000F5A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858A57311FDD5D08000F5A5A /* AppDelegate.swift */; };
-		858A57341FDD5D08000F5A5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858A57331FDD5D08000F5A5A /* ViewController.swift */; };
+		858A57341FDD5D08000F5A5A /* LunchAndReset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858A57331FDD5D08000F5A5A /* LunchAndReset.swift */; };
 		858A57371FDD5D08000F5A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858A57351FDD5D08000F5A5A /* Main.storyboard */; };
 		858A57391FDD5D08000F5A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 858A57381FDD5D08000F5A5A /* Assets.xcassets */; };
 		858A573C1FDD5D08000F5A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858A573A1FDD5D08000F5A5A /* LaunchScreen.storyboard */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		858A572E1FDD5D07000F5A5A /* hustle-mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hustle-mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		858A57311FDD5D08000F5A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		858A57331FDD5D08000F5A5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		858A57331FDD5D08000F5A5A /* LunchAndReset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchAndReset.swift; sourceTree = "<group>"; };
 		858A57361FDD5D08000F5A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		858A57381FDD5D08000F5A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		858A573B1FDD5D08000F5A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				858A57431FDD5EC9000F5A5A /* hustle-on.wav */,
 				858A57311FDD5D08000F5A5A /* AppDelegate.swift */,
-				858A57331FDD5D08000F5A5A /* ViewController.swift */,
+				858A57331FDD5D08000F5A5A /* LunchAndReset.swift */,
 				858A57351FDD5D08000F5A5A /* Main.storyboard */,
 				858A57381FDD5D08000F5A5A /* Assets.xcassets */,
 				858A573A1FDD5D08000F5A5A /* LaunchScreen.storyboard */,
@@ -140,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				858A57341FDD5D08000F5A5A /* ViewController.swift in Sources */,
+				858A57341FDD5D08000F5A5A /* LunchAndReset.swift in Sources */,
 				858A57321FDD5D08000F5A5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,11 +281,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AR762T3P84;
 				INFOPLIST_FILE = "hustle-mode/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hzrb.hustle-mode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,11 +297,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AR762T3P84;
 				INFOPLIST_FILE = "hustle-mode/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hzrb.hustle-mode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

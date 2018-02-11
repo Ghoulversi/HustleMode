@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 
-class ViewController: UIViewController {
+class LunchAndReset: UIViewController {
 
     
     @IBOutlet weak var darkBlueBG: UIImageView!
@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var rocket: UIImageView!
     @IBOutlet weak var hustleLbl: UILabel!
     @IBOutlet weak var onLbl: UILabel!
+    @IBOutlet weak var ResetBtn: UIButton!
     
     var player: AVAudioPlayer!
     
@@ -40,6 +41,7 @@ class ViewController: UIViewController {
     cloudHolder.isHidden = false
         darkBlueBG.isHidden = true
         powerBtn.isHidden = true
+        ResetBtn.isHidden = false
         player.play()
         
         UIView.animate(withDuration: 2.3, animations: {
@@ -51,7 +53,19 @@ class ViewController: UIViewController {
     
     }
 
-
+    @IBAction func ResetBtn(_ sender: Any) {
+        cloudHolder.isHidden = true
+        darkBlueBG.isHidden = false
+        powerBtn.isHidden = false
+        ResetBtn.isHidden = true
+        hustleLbl.isHidden = true
+        onLbl.isHidden = true
+        player.stop()
+        UIView.animate(withDuration: 0.5, animations: {
+            self.rocket.frame = CGRect(x: 0, y: 180, width: 0, height: 0)
+        })
+    }
+    
 
 }
 
